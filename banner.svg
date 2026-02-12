@@ -1,0 +1,64 @@
+<svg width="800" height="250" viewBox="0 0 800 250" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="250" fill="#050510" rx="10" ry="10"/>
+  
+  <!-- Definitions for Gradients and Glows -->
+  <defs>
+    <linearGradient id="neonGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00f3ff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#bc13fe;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a1a2e" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Grid Background -->
+  <rect width="100%" height="100%" fill="url(#grid)" />
+
+  <!-- Animated Circuit Lines -->
+  <path d="M0 50 H800" stroke="#1f2937" stroke-width="1" />
+  <path d="M0 200 H800" stroke="#1f2937" stroke-width="1" />
+  
+  <!-- Main Text -->
+  <text x="50%" y="45%" dominant-baseline="middle" text-anchor="middle" 
+        font-family="Arial, sans-serif" font-weight="900" font-size="60" 
+        fill="url(#neonGrad)" filter="url(#glow)" letter-spacing="4">
+    SAQIB AI NEXUS
+    <animate attributeName="opacity" values="0.9;1;0.9" dur="3s" repeatCount="indefinite" />
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="50%" y="65%" dominant-baseline="middle" text-anchor="middle" 
+        font-family="monospace" font-size="16" fill="#00f3ff" letter-spacing="8" opacity="0.8">
+    &lt; DIGITAL IDENTITY CONVERGENCE /&gt;
+  </text>
+
+  <!-- Moving Particles (The Agents) -->
+  <circle r="4" fill="#00f3ff" filter="url(#glow)">
+    <animateMotion dur="4s" repeatCount="indefinite" path="M0,125 Q200,50 400,125 T800,125" />
+    <animate attributeName="r" values="3;5;3" dur="1s" repeatCount="indefinite" />
+  </circle>
+  
+  <circle r="4" fill="#bc13fe" filter="url(#glow)">
+    <animateMotion dur="4s" repeatCount="indefinite" begin="0.5s" path="M0,125 Q200,200 400,125 T800,125" />
+     <animate attributeName="r" values="3;5;3" dur="1s" repeatCount="indefinite" />
+  </circle>
+
+  <!-- Status Indicator -->
+  <rect x="350" y="215" width="100" height="20" rx="10" fill="#0f172a" stroke="#00f3ff" stroke-width="0.5"/>
+  <circle cx="365" cy="225" r="3" fill="#00ff00">
+    <animate attributeName="opacity" values="1;0.2;1" dur="1.5s" repeatCount="indefinite" />
+  </circle>
+  <text x="400" y="225" dominant-baseline="middle" text-anchor="middle" fill="#fff" font-family="monospace" font-size="10">SYSTEM ONLINE</text>
+</svg>

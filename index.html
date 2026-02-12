@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary Meta Tags -->
+    <title>Saqib AI Nexus</title>
+    <meta name="title" content="Saqib AI Nexus">
+    <meta name="description" content="A futuristic portfolio intro where AI agents converge to form the identity 'Saqib', featuring an advanced interactive particle system.">
+    <meta name="theme-color" content="#050510" />
+
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://saqib-ai-nexus.vercel.app/">
+    <meta property="og:title" content="Saqib AI Nexus - Digital Identity">
+    <meta property="og:description" content="Experience the convergence of AI agents forming the digital identity of Saqib. A futuristic interactive particle system.">
+    <!-- You can replace the content below with a direct link to a screenshot of your app -->
+    <meta property="og:image" content="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&h=630">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://saqib-ai-nexus.vercel.app/">
+    <meta property="twitter:title" content="Saqib AI Nexus - Digital Identity">
+    <meta property="twitter:description" content="Experience the convergence of AI agents forming the digital identity of Saqib. A futuristic interactive particle system.">
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&h=630">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              orbitron: ['Orbitron', 'sans-serif'],
+              rajdhani: ['Rajdhani', 'sans-serif'],
+            },
+            colors: {
+              cyber: {
+                bg: '#050510',
+                primary: '#00f3ff',
+                secondary: '#bc13fe',
+                dim: 'rgba(0, 243, 255, 0.1)',
+              }
+            },
+            animation: {
+              'pulse-fast': 'pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      body {
+        margin: 0;
+        background-color: #050510;
+        color: white;
+        overflow: hidden; /* Prevent scrolling during intro */
+      }
+      /* Custom Scrollbar for Chat */
+      .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+      }
+      .scrollbar-hide {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://esm.sh/@google/genai@^1.39.0",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
