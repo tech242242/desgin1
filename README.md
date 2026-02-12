@@ -4,7 +4,7 @@
   <br />
   <br />
 
-  [![Netlify Status](https://api.netlify.com/api/v1/badges/your-site-id/deploy-status)](https://app.netlify.com/sites/your-site-name/deploys)
+
   ![License](https://img.shields.io/badge/License-MIT-blue.svg)
   ![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)
   ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?logo=typescript&logoColor=white)
